@@ -9,7 +9,6 @@ Group:          Development/Libraries
 License:        PSF 
 URL:            http://www.crummy.com/software/BeautifulSoup 
 Source0:        http://www.crummy.com/software/BeautifulSoup/download/%{origname}.py 
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root 
   
 BuildArch:      noarch 
 BuildRequires:  python-devel 
