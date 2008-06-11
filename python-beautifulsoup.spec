@@ -12,7 +12,8 @@ Source0:	http://www.crummy.com/software/BeautifulSoup/download/%{oname}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root 
   
 BuildArch:	noarch 
-BuildRequires:	python-devel 
+BuildRequires:	python-devel
+BuildRequires:	python-setuptools
 Requires:	python 
   
 %description 
