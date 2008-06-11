@@ -5,7 +5,7 @@ Version:	3.0.6
 Release:	%mkrel 1
 Summary:	The Screen-Scraper's Friend 
   
-Group:		Development/Libraries 
+Group:		Development/Python
 License:	Python
 URL:		http://www.crummy.com/software/BeautifulSoup 
 Source0:	http://www.crummy.com/software/BeautifulSoup/download/%{oname}.tar.gz
