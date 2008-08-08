@@ -2,7 +2,7 @@
   
 Name:		python-beautifulsoup 
 Version:	3.0.6
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	The Screen-Scraper's Friend 
   
 Group:		Development/Python
