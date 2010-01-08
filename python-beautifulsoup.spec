@@ -1,14 +1,14 @@
 %define oname	BeautifulSoup 
   
 Name:		python-beautifulsoup 
-Version:	3.0.7a
+Version:	3.0.8
 Release:	%mkrel 1
 Summary:	The Screen-Scraper's Friend 
   
 Group:		Development/Python
 License:	Python
 URL:		http://www.crummy.com/software/BeautifulSoup 
-Source0:	http://www.crummy.com/software/BeautifulSoup/download/%{oname}.tar.gz
+Source0:	http://www.crummy.com/software/BeautifulSoup/download/%{oname}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root 
   
 BuildArch:	noarch 
