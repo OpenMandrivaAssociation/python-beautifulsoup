@@ -1,8 +1,8 @@
 %define oname	BeautifulSoup 
   
 Name:		python-beautifulsoup 
-Version:	3.0.8
-Release:	%mkrel 3
+Version:	3.2.0
+Release:	%mkrel 1
 Summary:	The Screen-Scraper's Friend 
   
 Group:		Development/Python
