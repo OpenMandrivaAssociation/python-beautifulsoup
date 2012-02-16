@@ -1,7 +1,7 @@
 %define oname	BeautifulSoup 
   
 Name:		python-beautifulsoup 
-Version:	3.2.0
+Version:	3.2.1
 Release:	%mkrel 1
 Summary:	The Screen-Scraper's Friend 
   
