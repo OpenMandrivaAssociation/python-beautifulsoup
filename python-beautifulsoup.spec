@@ -1,20 +1,17 @@
-%define oname	BeautifulSoup 
+%define module	BeautifulSoup 
   
-Name:		python-beautifulsoup 
+Name:		python-%{module} 
 Version:	3.2.1
 Release:	%mkrel 1
 Summary:	The Screen-Scraper's Friend 
-  
 Group:		Development/Python
 License:	Python
 URL:		http://www.crummy.com/software/BeautifulSoup 
-Source0:	http://www.crummy.com/software/BeautifulSoup/download/%{oname}-%{version}.tar.gz
+Source0:	http://www.crummy.com/software/BeautifulSoup/download/%{module}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root 
-  
 BuildArch:	noarch 
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
-Requires:	python 
   
 %description 
 The BeautifulSoup class turns arbitrarily bad HTML into a tree-like 
@@ -25,20 +22,15 @@ original tag and its closing tag (if any). It's easy to extract Tags
 that meet certain criteria. 
   
 %prep
-%setup -q -n %{oname}-%{version}
-  
-%build 
+%setup -q -n %{module}-%{version}
   
 %install 
-rm -rf %{buildroot}
-python setup.py install --root=%{buildroot} --compile --optimize=2
+%__rm -rf %{buildroot}
+PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILE_LIST
 
 %clean 
-rm -rf %{buildroot}
+%__rm -rf %{buildroot}
   
-%files  
+%files -f FILE_LIST
 %defattr(-,root,root,-) 
-%{py_puresitedir}/%{oname}.py*
-%{py_puresitedir}/%{oname}Tests.py*
-%{py_puresitedir}/%{oname}-%{version}-py%{pyver}.egg-info
 
