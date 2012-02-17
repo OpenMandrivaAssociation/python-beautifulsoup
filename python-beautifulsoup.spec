@@ -1,6 +1,6 @@
 %define module	BeautifulSoup 
   
-Name:		python-%{module} 
+Name:		python-beautifulsoup
 Version:	3.2.1
 Release:	2
 Summary:	The Screen-Scraper's Friend 
