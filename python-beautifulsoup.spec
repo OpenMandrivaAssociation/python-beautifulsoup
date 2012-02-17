@@ -2,7 +2,7 @@
   
 Name:		python-beautifulsoup
 Version:	3.2.1
-Release:	2
+Release:	1
 Summary:	The Screen-Scraper's Friend 
 Group:		Development/Python
 License:	Python
