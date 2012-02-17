@@ -2,7 +2,7 @@
   
 Name:		python-%{module} 
 Version:	3.2.1
-Release:	%mkrel 1
+Release:	1
 Summary:	The Screen-Scraper's Friend 
 Group:		Development/Python
 License:	Python
