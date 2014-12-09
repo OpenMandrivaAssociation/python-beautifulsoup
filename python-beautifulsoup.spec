@@ -10,7 +10,7 @@ Url:		http://www.crummy.com/software/BeautifulSoup
 Source0:	http://www.crummy.com/software/BeautifulSoup/download/%{module}-%{version}.tar.gz
 BuildArch:	noarch 
 BuildRequires:	python-setuptools
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python2)
   
 %description 
 The BeautifulSoup class turns arbitrarily bad HTML into a tree-like 
@@ -24,7 +24,7 @@ that meet certain criteria.
 %setup -qn %{module}-%{version}
   
 %install 
-PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILE_LIST
+PYTHONDONTWRITEBYTECODE= %__python2 setup.py install --root=%{buildroot} --record=FILE_LIST
 
 %files -f FILE_LIST
 
