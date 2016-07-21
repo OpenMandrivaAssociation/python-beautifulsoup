@@ -1,17 +1,19 @@
-%define module	beautifulsoup4
+%define module	BeautifulSoup 
   
 Summary:	The Screen-Scraper's Friend 
-Name:		python-beautifulsoup
-Version:	4.3.2
-Release:	2
+Name:		python2-beautifulsoup
+Version:	3.2.1
+Release:	9
+Epoch:		1
 Group:		Development/Python
 License:	Python
 Url:		http://www.crummy.com/software/BeautifulSoup 
-Source0:	http://www.crummy.com/software/BeautifulSoup/bs4/download/4.3/%{module}-%{version}.tar.gz
+Source0:	http://www.crummy.com/software/BeautifulSoup/download/%{module}-%{version}.tar.gz
 BuildArch:	noarch 
 BuildRequires:	python-setuptools
-BuildRequires:	pkgconfig(python)
-  
+BuildRequires:	pkgconfig(python2)
+%rename		python-beautifulsoup
+ 
 %description 
 The BeautifulSoup class turns arbitrarily bad HTML into a tree-like 
 nested tag-soup list of Tag objects and text snippets. A Tag object 
@@ -24,7 +26,7 @@ that meet certain criteria.
 %setup -qn %{module}-%{version}
   
 %install 
-PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILE_LIST
+PYTHONDONTWRITEBYTECODE= %__python2 setup.py install --root=%{buildroot} --record=FILE_LIST
 
 %files -f FILE_LIST
 
