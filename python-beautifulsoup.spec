@@ -3,7 +3,7 @@
 Summary:	The Screen-Scraper's Friend 
 Name:		python2-beautifulsoup
 Version:	3.2.1
-Release:	9
+Release:	10
 Epoch:		1
 Group:		Development/Python
 License:	Python
