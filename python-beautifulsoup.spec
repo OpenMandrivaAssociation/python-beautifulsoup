@@ -26,7 +26,8 @@ that meet certain criteria.
 %setup -qn %{module}-%{version}
   
 %install 
-PYTHONDONTWRITEBYTECODE= %__python2 setup.py install --root=%{buildroot} --record=FILE_LIST
+PYTHONDONTWRITEBYTECODE= %__python2 setup.py install --root=%{buildroot} 
 
-%files -f FILE_LIST
+%files
+%{python2_sitelib}/Bea*
 
