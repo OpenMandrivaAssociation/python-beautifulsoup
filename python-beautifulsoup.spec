@@ -7,7 +7,7 @@ Release:	1
 Epoch:		1
 Group:		Development/Python
 License:	Python
-Url:		http://www.crummy.com/software/BeautifulSoup 
+Url:		https://www.crummy.com/software/BeautifulSoup 
 Source0:	https://files.pythonhosted.org/packages/40/f2/6c9f2f3e696ee6a1fb0e4d7850617e224ed2b0b1e872110abffeca2a09d4/BeautifulSoup-3.2.2.tar.gz
 BuildArch:	noarch 
 BuildRequires:	python-setuptools
